@@ -7,7 +7,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
   <style>
@@ -27,11 +27,11 @@
       --radius:18px;
       --radius-sm:12px;
       --transition:0.28s ease;
-      --maxw:1160px;
+      --maxw:1180px;
     }
 
-    *{margin:0;padding:0;box-sizing:border-box;}
-    html{scroll-behavior:smooth;}
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
     body{
       font-family:'Manrope',sans-serif;
       color:var(--text);
@@ -45,16 +45,16 @@
       position:fixed;
       inset:0;
       background-image:
-        linear-gradient(rgba(37,99,235,0.035) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(37,99,235,0.035) 1px, transparent 1px);
+        linear-gradient(rgba(37,99,235,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(37,99,235,0.03) 1px, transparent 1px);
       background-size:56px 56px;
       pointer-events:none;
       z-index:0;
     }
 
-    a{text-decoration:none;color:inherit;}
-    img{display:block;max-width:100%;}
-    ul{list-style:none;}
+    a{text-decoration:none;color:inherit}
+    img{display:block;max-width:100%}
+    ul{list-style:none}
 
     .container{
       width:min(var(--maxw), calc(100% - 2.4rem));
@@ -65,7 +65,7 @@
 
     .section{
       padding:88px 0;
-      border-top:1px solid #f1f5f9;
+      border-top:1px solid #eff6ff;
     }
 
     .section-tag{
@@ -85,8 +85,7 @@
       width:24px;
       height:2px;
       background:var(--primary);
-      display:block;
-      border-radius:10px;
+      border-radius:999px;
     }
 
     .section-title{
@@ -94,11 +93,11 @@
       font-size:clamp(2rem, 4vw, 3.2rem);
       line-height:1.06;
       letter-spacing:-1px;
-      margin-bottom:14px;
+      margin-bottom:12px;
     }
 
     .section-sub{
-      max-width:720px;
+      max-width:760px;
       color:var(--muted);
       font-size:1rem;
     }
@@ -126,14 +125,12 @@
     }
 
     .btn-primary{
-      background:linear-gradient(135deg, var(--primary), var(--primary-2));
+      background:linear-gradient(135deg,var(--primary),var(--primary-2));
       color:#fff;
       box-shadow:0 10px 24px rgba(37,99,235,0.20);
     }
 
-    .btn-primary:hover{
-      transform:translateY(-2px);
-    }
+    .btn-primary:hover{transform:translateY(-2px)}
 
     .btn-outline{
       background:#fff;
@@ -147,17 +144,14 @@
       transform:translateY(-2px);
     }
 
-    /* NAV */
     nav{
       position:fixed;
-      top:0;
-      left:0;
-      right:0;
+      top:0;left:0;right:0;
       z-index:1000;
       height:74px;
       display:flex;
       align-items:center;
-      background:rgba(255,255,255,0.92);
+      background:rgba(255,255,255,0.94);
       backdrop-filter:blur(14px);
       border-bottom:1px solid #eef2f7;
     }
@@ -174,16 +168,16 @@
     .logo{
       font-family:'Syne',sans-serif;
       font-weight:800;
-      font-size:1.34rem;
+      font-size:1.38rem;
       letter-spacing:-0.5px;
     }
 
-    .logo span{color:var(--primary);}
+    .logo span{color:var(--primary)}
 
     .nav-links{
       display:flex;
       align-items:center;
-      gap:28px;
+      gap:26px;
     }
 
     .nav-links a{
@@ -203,14 +197,13 @@
       background:none;
       border:none;
       color:var(--text);
-      font-size:1.35rem;
+      font-size:1.3rem;
       cursor:pointer;
     }
 
-    /* HERO */
     #hero{
       padding-top:128px;
-      padding-bottom:72px;
+      padding-bottom:74px;
       min-height:100vh;
       display:flex;
       align-items:center;
@@ -223,8 +216,8 @@
       position:absolute;
       right:6%;
       top:12%;
-      width:480px;
-      height:480px;
+      width:420px;
+      height:420px;
       border-radius:50%;
       background:radial-gradient(circle, rgba(37,99,235,0.12), transparent 66%);
       filter:blur(10px);
@@ -234,7 +227,7 @@
 
     .hero-grid{
       display:grid;
-      grid-template-columns:1.1fr 0.9fr;
+      grid-template-columns:1.18fr 0.82fr;
       gap:44px;
       align-items:center;
     }
@@ -250,7 +243,6 @@
       color:var(--primary);
       font-weight:800;
       font-size:0.78rem;
-      letter-spacing:0.2px;
       margin-bottom:22px;
     }
 
@@ -262,30 +254,30 @@
     }
 
     @keyframes pulse{
-      0%{box-shadow:0 0 0 0 rgba(34,197,94,0.4);}
-      70%{box-shadow:0 0 0 12px rgba(34,197,94,0);}
-      100%{box-shadow:0 0 0 0 rgba(34,197,94,0);}
+      0%{box-shadow:0 0 0 0 rgba(34,197,94,0.4)}
+      70%{box-shadow:0 0 0 12px rgba(34,197,94,0)}
+      100%{box-shadow:0 0 0 0 rgba(34,197,94,0)}
     }
 
     .hero-title{
       font-family:'Syne',sans-serif;
-      font-size:clamp(3rem, 7vw, 5.6rem);
-      line-height:0.96;
+      font-size:clamp(3.1rem, 7vw, 5.8rem);
+      line-height:0.95;
       letter-spacing:-2px;
       margin-bottom:18px;
     }
 
     .hero-title .highlight{
-      background:linear-gradient(135deg, var(--primary), var(--primary-2));
+      background:linear-gradient(135deg,var(--primary),var(--primary-2));
       -webkit-background-clip:text;
       -webkit-text-fill-color:transparent;
       background-clip:text;
     }
 
     .hero-role{
-      font-size:1.1rem;
+      font-size:1.08rem;
       color:var(--muted);
-      margin-bottom:18px;
+      margin-bottom:16px;
       font-weight:500;
     }
 
@@ -296,17 +288,17 @@
 
     .hero-summary{
       color:var(--muted);
-      max-width:710px;
+      max-width:720px;
       font-size:1rem;
       line-height:1.85;
-      margin-bottom:26px;
+      margin-bottom:24px;
     }
 
     .hero-actions{
       display:flex;
       flex-wrap:wrap;
       gap:14px;
-      margin-bottom:26px;
+      margin-bottom:24px;
     }
 
     .hero-mini-info{
@@ -342,17 +334,17 @@
 
     .hero-photo-wrap{
       display:flex;
-      justify-content:center;
+      justify-content:flex-end;
     }
 
     .hero-photo-card{
       width:100%;
-      max-width:420px;
+      max-width:340px;
       background:#fff;
       border:1px solid var(--line-blue);
-      border-radius:28px;
-      padding:18px;
-      box-shadow:0 20px 40px rgba(37,99,235,0.10);
+      border-radius:26px;
+      padding:16px;
+      box-shadow:0 18px 40px rgba(37,99,235,0.09);
       overflow:hidden;
     }
 
@@ -360,7 +352,7 @@
       width:100%;
       aspect-ratio:4 / 5;
       object-fit:cover;
-      border-radius:22px;
+      border-radius:20px;
       background:#f8fafc;
       border:1px solid #e2e8f0;
     }
@@ -368,37 +360,43 @@
     .photo-caption{
       display:flex;
       justify-content:space-between;
-      gap:14px;
+      gap:10px;
       flex-wrap:wrap;
-      margin-top:14px;
-      padding:0 4px;
+      margin-top:12px;
     }
 
     .photo-pill{
       display:inline-flex;
       align-items:center;
       gap:8px;
-      padding:10px 14px;
+      padding:9px 13px;
       background:#f8fbff;
       border:1px solid #dbeafe;
       border-radius:999px;
       color:var(--primary);
-      font-size:0.85rem;
+      font-size:0.82rem;
       font-weight:800;
       white-space:nowrap;
     }
 
-    /* ABOUT */
     .about-grid{
       margin-top:34px;
       display:grid;
       grid-template-columns:1.05fr 0.95fr;
-      gap:26px;
+      gap:24px;
       align-items:start;
     }
 
-    .about-card{
-      padding:28px;
+    .about-card,
+    .quick-panel,
+    .col-card,
+    .project-card,
+    .skill-card,
+    .hobby-card,
+    .contact-card,
+    .form-card,
+    .cert-card{
+      padding:26px;
     }
 
     .about-card p{
@@ -416,6 +414,7 @@
       display:grid;
       grid-template-columns:1fr 1fr;
       gap:14px;
+      margin-bottom:16px;
     }
 
     .profile-item{
@@ -443,23 +442,22 @@
 
     .profile-item .v{
       font-weight:700;
-      font-size:0.95rem;
+      font-size:0.94rem;
     }
 
     .quick-panel{
-      padding:28px;
       background:linear-gradient(180deg,#ffffff,#f9fcff);
     }
 
     .quick-panel h3{
       font-family:'Syne',sans-serif;
-      font-size:1.28rem;
+      font-size:1.24rem;
       margin-bottom:16px;
     }
 
     .quick-code{
       font-family:"Courier New",monospace;
-      font-size:0.88rem;
+      font-size:0.87rem;
       line-height:1.9;
       color:#0f172a;
       background:#f8fbff;
@@ -469,21 +467,16 @@
       overflow:auto;
     }
 
-    .quick-code .key{color:#2563eb;}
-    .quick-code .string{color:#0f766e;}
-    .quick-code .num{color:#ea580c;}
-    .quick-code .comment{color:#64748b;}
+    .quick-code .key{color:#2563eb}
+    .quick-code .string{color:#0f766e}
+    .quick-code .num{color:#ea580c}
+    .quick-code .comment{color:#64748b}
 
-    /* EXPERIENCE / EDUCATION */
     .two-col{
       display:grid;
       grid-template-columns:1fr 1fr;
-      gap:26px;
+      gap:24px;
       margin-top:34px;
-    }
-
-    .col-card{
-      padding:26px;
     }
 
     .col-head{
@@ -492,11 +485,11 @@
       gap:10px;
       margin-bottom:18px;
       font-family:'Syne',sans-serif;
-      font-size:1.1rem;
+      font-size:1.08rem;
       font-weight:700;
     }
 
-    .col-head i{color:var(--primary);}
+    .col-head i{color:var(--primary)}
 
     .timeline{
       display:flex;
@@ -509,10 +502,6 @@
       padding-left:20px;
       padding-bottom:8px;
       border-left:1px solid #cbd5e1;
-    }
-
-    .timeline-item:last-child{
-      padding-bottom:0;
     }
 
     .timeline-item::before{
@@ -550,7 +539,6 @@
     }
 
     .timeline-item ul{
-      padding-left:0;
       display:flex;
       flex-direction:column;
       gap:8px;
@@ -573,20 +561,21 @@
       font-weight:900;
     }
 
-    /* PROJECTS */
     .project-grid{
       display:grid;
-      grid-template-columns:repeat(2, 1fr);
+      grid-template-columns:repeat(2,1fr);
       gap:22px;
       margin-top:34px;
     }
 
     .project-card{
-      padding:24px;
       transition:var(--transition);
     }
 
-    .project-card:hover{
+    .project-card:hover,
+    .skill-card:hover,
+    .hobby-card:hover,
+    .cert-card:hover{
       transform:translateY(-4px);
       box-shadow:var(--shadow-hover);
       border-color:#bfdbfe;
@@ -602,7 +591,7 @@
 
     .project-no{
       font-family:'Syne',sans-serif;
-      font-size:2.4rem;
+      font-size:2.3rem;
       line-height:1;
       color:rgba(37,99,235,0.14);
       font-weight:800;
@@ -610,7 +599,7 @@
 
     .project-title{
       font-family:'Syne',sans-serif;
-      font-size:1.18rem;
+      font-size:1.16rem;
       line-height:1.1;
       margin-bottom:8px;
     }
@@ -675,27 +664,15 @@
       border-top:1px solid var(--line);
     }
 
-    /* SKILLS */
     .skills-grid{
       display:grid;
-      grid-template-columns:repeat(3, 1fr);
+      grid-template-columns:repeat(3,1fr);
       gap:20px;
       margin-top:34px;
     }
 
-    .skill-card{
-      padding:24px;
-      transition:var(--transition);
-    }
-
-    .skill-card:hover{
-      transform:translateY(-4px);
-      box-shadow:var(--shadow-hover);
-      border-color:#bfdbfe;
-    }
-
     .skill-card i{
-      font-size:1.45rem;
+      font-size:1.42rem;
       color:var(--primary);
       margin-bottom:12px;
     }
@@ -724,7 +701,55 @@
       font-weight:800;
     }
 
-    /* HOBBIES */
+    .cert-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:20px;
+      margin-top:34px;
+    }
+
+    .cert-thumb{
+      width:100%;
+      height:210px;
+      object-fit:cover;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background:#f8fafc;
+      margin-bottom:14px;
+    }
+
+    .cert-card h3{
+      font-family:'Syne',sans-serif;
+      font-size:1rem;
+      margin-bottom:8px;
+    }
+
+    .cert-card p{
+      color:var(--muted);
+      font-size:0.92rem;
+      margin-bottom:14px;
+      line-height:1.75;
+    }
+
+    .cert-links{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+
+    .mini-link{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:9px 12px;
+      border-radius:10px;
+      background:#eff6ff;
+      border:1px solid #dbeafe;
+      color:var(--primary);
+      font-size:0.82rem;
+      font-weight:800;
+    }
+
     .hobby-grid{
       display:grid;
       grid-template-columns:repeat(3,1fr);
@@ -733,15 +758,7 @@
     }
 
     .hobby-card{
-      padding:26px 22px;
       text-align:center;
-      transition:var(--transition);
-    }
-
-    .hobby-card:hover{
-      transform:translateY(-4px);
-      box-shadow:var(--shadow-hover);
-      border-color:#bfdbfe;
     }
 
     .hobby-icon{
@@ -769,17 +786,11 @@
       line-height:1.75;
     }
 
-    /* CONTACT */
     .contact-grid{
       display:grid;
       grid-template-columns:0.92fr 1.08fr;
-      gap:26px;
+      gap:24px;
       margin-top:34px;
-    }
-
-    .contact-card,
-    .form-card{
-      padding:28px;
     }
 
     .contact-card p{
@@ -841,7 +852,7 @@
 
     .form-card h3{
       font-family:'Syne',sans-serif;
-      font-size:1.2rem;
+      font-size:1.18rem;
       margin-bottom:16px;
     }
 
@@ -936,7 +947,6 @@
       transform:translateY(-2px);
     }
 
-    /* ANIMATION */
     .reveal{
       opacity:0;
       transform:translateY(28px);
@@ -948,8 +958,7 @@
       transform:translateY(0);
     }
 
-    /* RESPONSIVE */
-    @media (max-width: 1024px){
+    @media (max-width:1024px){
       .hero-grid,
       .about-grid,
       .two-col,
@@ -959,32 +968,30 @@
 
       .project-grid,
       .skills-grid,
+      .cert-grid,
       .hobby-grid{
         grid-template-columns:1fr 1fr;
       }
 
+      .hero-photo-wrap{
+        justify-content:center;
+      }
+
       .hero-photo-card{
-        max-width:420px;
+        max-width:340px;
       }
     }
 
-    @media (max-width: 720px){
+    @media (max-width:720px){
       .container,
       .nav-inner{
         width:min(var(--maxw), calc(100% - 1.2rem));
       }
 
-      nav{
-        height:68px;
-      }
+      nav{height:68px}
+      #hero{padding-top:110px}
 
-      #hero{
-        padding-top:110px;
-      }
-
-      .nav-toggle{
-        display:block;
-      }
+      .nav-toggle{display:block}
 
       .nav-links{
         display:none;
@@ -1000,13 +1007,12 @@
         padding:18px 20px 22px;
       }
 
-      .nav-links.open{
-        display:flex;
-      }
+      .nav-links.open{display:flex}
 
       .hero-mini-info,
       .project-grid,
       .skills-grid,
+      .cert-grid,
       .hobby-grid,
       .profile-list,
       .project-media,
@@ -1019,17 +1025,9 @@
         align-items:stretch;
       }
 
-      .btn{
-        width:100%;
-      }
-
-      .section{
-        padding:72px 0;
-      }
-
-      .photo-caption{
-        flex-direction:column;
-      }
+      .btn{width:100%}
+      .section{padding:72px 0}
+      .photo-caption{flex-direction:column}
     }
   </style>
 </head>
@@ -1049,6 +1047,7 @@
         <a href="#projects">Projects</a>
         <a href="#education">Education</a>
         <a href="#skills">Skills</a>
+        <a href="#certificates">Certificates</a>
         <a href="#hobbies">Hobbies</a>
         <a href="#contact">Contact</a>
       </div>
@@ -1065,15 +1064,15 @@
           </div>
 
           <h1 class="hero-title">
-            Hardik <span class="highlight">Rathwa</span>
+            Hardik <span class="highlight">Rathwa.</span>
           </h1>
 
           <p class="hero-role">
-            <strong>M.Sc. Mechatronics Student</strong> — Robotics, Automation, Mechanical Design, Embedded Systems
+            <strong>M.Sc. Mechatronics Student</strong> — Robotics, Automation, Embedded Systems, Mechanical Design
           </p>
 
           <p class="hero-summary">
-            M.Sc. Mechatronics student with 6+ years of engineering education and 2+ years of industry experience in robotics, automation, and electromechanical systems. Experience in robot system integration, CAD-based mechanical design, robotic prototyping, PLC-assisted automation support, and hardware-focused engineering projects. Strong interest in robot applications, robot cells, and mechanical system design for automation.
+            M.Sc. Mechatronics student with 6+ years of engineering education and 2+ years of industry experience in robotics, automation, and electromechanical systems. Experience in robot system integration, CAD-based mechanical design, and robotic prototyping using SolidWorks and 3D printing. Strong interest in robot applications, robot cells, and mechanical system design for automation.
           </p>
 
           <div class="hero-actions">
@@ -1082,6 +1081,9 @@
             </a>
             <a href="Hardik_Rathwa_CV.pdf" download class="btn btn-outline">
               <i class="fas fa-download"></i> Download CV
+            </a>
+            <a href="YOUR_THESIS_LINK_HERE" target="_blank" class="btn btn-outline">
+              <i class="fas fa-book-open"></i> Thesis / Research Link
             </a>
           </div>
 
@@ -1095,7 +1097,7 @@
               <span class="value">English · German B1</span>
             </div>
             <div class="mini-box">
-              <span class="label">Relocation</span>
+              <span class="label">Status</span>
               <span class="value">Willing to relocate</span>
             </div>
           </div>
@@ -1105,8 +1107,8 @@
           <div class="hero-photo-card">
             <img src="Photo_Hardik_Rathwa.png" alt="Hardik Rathwa" class="hero-photo" />
             <div class="photo-caption">
-              <div class="photo-pill"><i class="fas fa-location-dot"></i> Baden-Württemberg, Germany</div>
-              <div class="photo-pill"><i class="fas fa-graduation-cap"></i> M.Sc. Mechatronics</div>
+              <div class="photo-pill"><i class="fas fa-location-dot"></i> Germany</div>
+              <div class="photo-pill"><i class="fas fa-graduation-cap"></i> RWU Mechatronics</div>
             </div>
           </div>
         </div>
@@ -1119,7 +1121,7 @@
       <div class="section-tag">Profile</div>
       <h2 class="section-title">About Me</h2>
       <p class="section-sub">
-        A clean summary of my background, focus areas, and current career direction.
+        Clean and professional introduction with the same structured flow you liked, but fully adapted to your own profile.
       </p>
 
       <div class="about-grid">
@@ -1128,19 +1130,20 @@
             I am <strong>Hardik Rathwa</strong>, currently pursuing an <strong>M.Sc. in Mechatronics Engineering</strong> at the University of Applied Sciences Ravensburg-Weingarten, Germany.
           </p>
           <p>
-            My academic and practical background is centered on <strong>robotics, automation, mechanical system design, embedded hardware, and electromechanical integration</strong>. I enjoy working on real engineering systems where design, control, assembly, and testing come together.
+            My background combines <strong>robotics, automation, embedded systems, mechanical design, control, and electromechanical integration</strong>. I enjoy building practical systems where hardware, motion, control logic, and testing come together.
           </p>
           <p>
-            I have prior professional experience in automation environments, along with project experience in <strong>multi-axis robotic systems, Raspberry Pi and Arduino-based control, 3D-printed prototypes, and motion-system debugging</strong>.
+            I have prior industry experience in automation-focused environments and academic project experience in <strong>multi-axis robotic systems, Raspberry Pi and Arduino-based control, 3D-printed prototypes, motion debugging, and sensor-integrated systems</strong>.
           </p>
           <p>
-            I am currently seeking opportunities in <strong>robotics, automation, robot applications, mechanical design, embedded mechatronics, and technical prototyping</strong>, and I am available immediately.
+            I am currently looking for opportunities in <strong>robotics, robot applications, automation, mechatronic systems, embedded prototyping, and mechanical design</strong>, and I am available immediately.
           </p>
         </div>
 
         <div class="quick-panel card reveal">
           <h3>Quick Overview</h3>
-          <div class="profile-list" style="margin-bottom:16px;">
+
+          <div class="profile-list">
             <div class="profile-item">
               <i class="fas fa-user-gear"></i>
               <span class="k">Current Focus</span>
@@ -1168,9 +1171,10 @@
             {<br>
             &nbsp;&nbsp;<span class="key">"name"</span>: <span class="string">"Hardik Rathwa"</span>,<br>
             &nbsp;&nbsp;<span class="key">"degree"</span>: <span class="string">"M.Sc. Mechatronics Engineering"</span>,<br>
+            &nbsp;&nbsp;<span class="key">"university"</span>: <span class="string">"RWU Weingarten"</span>,<br>
             &nbsp;&nbsp;<span class="key">"location"</span>: <span class="string">"Baden-Württemberg, Germany"</span>,<br>
             &nbsp;&nbsp;<span class="key">"experience_years"</span>: <span class="num">2</span>,<br>
-            &nbsp;&nbsp;<span class="key">"interests"</span>: [<span class="string">"Robotics"</span>, <span class="string">"Automation"</span>, <span class="string">"Mechanical Design"</span>, <span class="string">"Embedded Systems"</span>],<br>
+            &nbsp;&nbsp;<span class="key">"interests"</span>: [<span class="string">"Robotics"</span>, <span class="string">"Automation"</span>, <span class="string">"Embedded Systems"</span>, <span class="string">"Mechanical Design"</span>],<br>
             &nbsp;&nbsp;<span class="key">"available_immediately"</span>: <span class="string">"true"</span><br>
             }
           </div>
@@ -1184,7 +1188,7 @@
       <div class="section-tag">Career</div>
       <h2 class="section-title">Work Experience</h2>
       <p class="section-sub">
-        Practical industry exposure in robotics, automation, testing, installation, and electromechanical systems.
+        Properly separated from education for a cleaner and more professional flow.
       </p>
 
       <div class="two-col" style="grid-template-columns:1fr;">
@@ -1206,7 +1210,7 @@
 
             <div class="timeline-item">
               <div class="time">Internship</div>
-              <div class="role">Automation / Robotics Intern</div>
+              <div class="role">Intern</div>
               <div class="org">Grey Matter Robotics Private Limited, India</div>
               <ul>
                 <li>Assisted in automation module assembly and robotics system preparation.</li>
@@ -1221,7 +1225,6 @@
               <div class="org">Manufacturing of Transformer – Nakoda Products, India</div>
               <ul>
                 <li>Performed electrical testing, insulation checks, and quality inspection in transformer manufacturing.</li>
-                <li>Worked with practical electrical systems, testing procedures, and production quality verification.</li>
               </ul>
             </div>
           </div>
@@ -1235,7 +1238,7 @@
       <div class="section-tag">Portfolio</div>
       <h2 class="section-title">Projects</h2>
       <p class="section-sub">
-        A structured project section with space for both images and videos. Replace the sample file names below with your real media files.
+        Add your project images and videos exactly like this. Replace the sample file names with your real files inside your public folder.
       </p>
 
       <div class="project-grid">
@@ -1250,7 +1253,7 @@
           </div>
 
           <p>
-            Designed a 6-axis robotic manipulator using SolidWorks and 3D-printed components. Assembled mechanical structures, motors, and drive systems, and integrated Arduino, Raspberry Pi, and motor drivers for robotic motion control, debugging, and validation.
+            Designed a 6-axis robotic manipulator using SolidWorks and 3D-printed components. Assembled mechanical structures, motors, and drive systems for robotic motion. Integrated Arduino, Raspberry Pi, and motor drivers for robotic control, debugging, and motion validation.
           </p>
 
           <div class="tech-tags">
@@ -1264,12 +1267,12 @@
 
           <div class="project-media">
             <div class="media-box">
-              <img src="robotic_arm_photo_1.jpg" alt="Multi-Axis Robotic Arm Project Photo">
+              <img src="images/project_robot_arm_1.jpg" alt="Multi-Axis Robotic Arm Photo">
               <div class="media-label">Project Photo</div>
             </div>
             <div class="media-box">
               <video controls>
-                <source src="robotic_arm_demo.mp4" type="video/mp4">
+                <source src="images/project_robot_arm_demo.mp4" type="video/mp4">
               </video>
               <div class="media-label">Project Video</div>
             </div>
@@ -1286,25 +1289,24 @@
           </div>
 
           <p>
-            Developed Python-based autonomous robot control using LiDAR and camera sensors. Implemented sensor-based navigation, obstacle detection, and control logic for path-following and mobile robot behavior.
+            Developed Python-based autonomous robot control using LiDAR and camera sensors. Implemented sensor-based navigation and obstacle detection for autonomous operation and competition-oriented robotic behavior.
           </p>
 
           <div class="tech-tags">
             <span class="tag">Python</span>
             <span class="tag">LiDAR</span>
             <span class="tag">Camera</span>
-            <span class="tag">Navigation</span>
-            <span class="tag">Robot Control</span>
+            <span class="tag">Autonomous Navigation</span>
           </div>
 
           <div class="project-media">
             <div class="media-box">
-              <img src="robot_car_photo.jpg" alt="Robot Car Racing Project Photo">
+              <img src="images/project_robot_car.jpg" alt="Robot Car Racing Project Photo">
               <div class="media-label">Project Photo</div>
             </div>
             <div class="media-box">
               <video controls>
-                <source src="robot_car_demo.mp4" type="video/mp4">
+                <source src="images/project_robot_car_demo.mp4" type="video/mp4">
               </video>
               <div class="media-label">Project Video</div>
             </div>
@@ -1321,24 +1323,24 @@
           </div>
 
           <p>
-            Designed an electromechanical assistive system with PID-based joint control. Worked on encoder feedback, torque validation, and mechanical-electrical system coordination for assistive movement support.
+            Designed an electromechanical assistive system with PID-based joint control. Implemented encoder feedback and torque validation while working on practical integration of mechanics, actuation, and control.
           </p>
 
           <div class="tech-tags">
             <span class="tag">PID Control</span>
             <span class="tag">Encoder Feedback</span>
             <span class="tag">Electromechanics</span>
-            <span class="tag">Assistive System</span>
+            <span class="tag">Assistive Robotics</span>
           </div>
 
           <div class="project-media">
             <div class="media-box">
-              <img src="exoskeleton_photo.jpg" alt="Lower Limb Exoskeleton Photo">
+              <img src="images/project_exoskeleton.jpg" alt="Exoskeleton Project Photo">
               <div class="media-label">Project Photo</div>
             </div>
             <div class="media-box">
               <video controls>
-                <source src="exoskeleton_demo.mp4" type="video/mp4">
+                <source src="images/project_exoskeleton_demo.mp4" type="video/mp4">
               </video>
               <div class="media-label">Project Video</div>
             </div>
@@ -1348,34 +1350,33 @@
         <div class="project-card card reveal">
           <div class="project-top">
             <div>
-              <div class="project-title">Automation & Hardware Portfolio</div>
-              <div class="project-meta">Industrial work + hands-on engineering</div>
+              <div class="project-title">Additional Robotics / Thesis / Portfolio Work</div>
+              <div class="project-meta">Academic + technical portfolio section</div>
             </div>
             <div class="project-no">04</div>
           </div>
 
           <p>
-            Supported robot-related structures, motor-drive integration, control hardware installation, and automation system testing. This section can also be used to show installation photos, electrical panels, mechanical assemblies, or 3D-printed prototypes from your practical work.
+            Use this card to show your thesis-related work, simulation screenshots, mechanism design, test setups, installation photos, or robotics application tasks. You can also link a GitHub repository or thesis report here.
           </p>
 
           <div class="tech-tags">
-            <span class="tag">Automation</span>
-            <span class="tag">Mechanical Assembly</span>
-            <span class="tag">Sensors</span>
+            <span class="tag">Thesis</span>
+            <span class="tag">Simulation</span>
             <span class="tag">Testing</span>
-            <span class="tag">Validation</span>
+            <span class="tag">Documentation</span>
           </div>
 
           <div class="project-media">
             <div class="media-box">
-              <img src="automation_photo.jpg" alt="Automation Portfolio Photo">
-              <div class="media-label">Portfolio Photo</div>
+              <img src="images/project_thesis.jpg" alt="Thesis or Additional Project Photo">
+              <div class="media-label">Project Photo</div>
             </div>
             <div class="media-box">
               <video controls>
-                <source src="automation_demo.mp4" type="video/mp4">
+                <source src="images/project_thesis_demo.mp4" type="video/mp4">
               </video>
-              <div class="media-label">Portfolio Video</div>
+              <div class="media-label">Project Video</div>
             </div>
           </div>
         </div>
@@ -1389,7 +1390,7 @@
       <div class="section-tag">Academics</div>
       <h2 class="section-title">Education</h2>
       <p class="section-sub">
-        Academic foundation in mechatronics systems, robotics, automation, embedded computing, and control.
+        Separate section for academic background so the website flow stays neat and clean.
       </p>
 
       <div class="two-col" style="grid-template-columns:1fr;">
@@ -1425,7 +1426,7 @@
       <div class="section-tag">Capabilities</div>
       <h2 class="section-title">Skills</h2>
       <p class="section-sub">
-        Core technical areas aligned with robotics, automation, mechanical design, and engineering implementation.
+        Technical areas presented in a clean card-based format.
       </p>
 
       <div class="skills-grid">
@@ -1447,7 +1448,6 @@
             <span class="pill">Arduino</span>
             <span class="pill">Raspberry Pi</span>
             <span class="pill">Motor Drivers</span>
-            <span class="pill">Hardware Integration</span>
           </div>
         </div>
 
@@ -1458,7 +1458,6 @@
             <span class="pill">SolidWorks</span>
             <span class="pill">3D Printing</span>
             <span class="pill">Mechanical Assembly</span>
-            <span class="pill">CAD-based Design</span>
           </div>
         </div>
 
@@ -1486,9 +1485,51 @@
           <i class="fas fa-language"></i>
           <h3>Languages</h3>
           <div class="pill-wrap">
-            <span class="pill">German B1 Certified</span>
+            <span class="pill">German B1</span>
             <span class="pill">Pursuing B2</span>
             <span class="pill">English</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certificates" class="section">
+    <div class="container">
+      <div class="section-tag">Achievements</div>
+      <h2 class="section-title">Certificates & Documents</h2>
+      <p class="section-sub">
+        Add certificate images, PDFs, thesis report links, or academic documents here. This gives a flow similar to the website you liked, but personalized for your own profile.
+      </p>
+
+      <div class="cert-grid">
+        <div class="cert-card card reveal">
+          <img src="images/certificate_msc.jpg" alt="MSc Certificate Preview" class="cert-thumb">
+          <h3>M.Sc. / Academic Document</h3>
+          <p>Use this card for your current academic proof, university-related certificate, or transcript preview.</p>
+          <div class="cert-links">
+            <a href="msc_certificate.pdf" target="_blank" class="mini-link"><i class="fas fa-file-pdf"></i> View PDF</a>
+            <a href="images/certificate_msc.jpg" target="_blank" class="mini-link"><i class="fas fa-image"></i> View Image</a>
+          </div>
+        </div>
+
+        <div class="cert-card card reveal">
+          <img src="images/certificate_be.jpg" alt="Bachelor Certificate Preview" class="cert-thumb">
+          <h3>Bachelor / Diploma Certificate</h3>
+          <p>Use this section for your previous degree certificate, diploma proof, or academic achievement document.</p>
+          <div class="cert-links">
+            <a href="be_certificate.pdf" target="_blank" class="mini-link"><i class="fas fa-file-pdf"></i> View PDF</a>
+            <a href="images/certificate_be.jpg" target="_blank" class="mini-link"><i class="fas fa-image"></i> View Image</a>
+          </div>
+        </div>
+
+        <div class="cert-card card reveal">
+          <img src="images/thesis_preview.jpg" alt="Thesis Preview" class="cert-thumb">
+          <h3>Thesis / Research / Scientific Work</h3>
+          <p>Add your thesis repository, report link, publication link, or project document here.</p>
+          <div class="cert-links">
+            <a href="YOUR_THESIS_LINK_HERE" target="_blank" class="mini-link"><i class="fas fa-link"></i> Thesis Link</a>
+            <a href="images/thesis_preview.jpg" target="_blank" class="mini-link"><i class="fas fa-image"></i> Preview</a>
           </div>
         </div>
       </div>
@@ -1500,26 +1541,26 @@
       <div class="section-tag">Personal Side</div>
       <h2 class="section-title">Hobbies</h2>
       <p class="section-sub">
-        A few interests that reflect how I think, learn, and stay balanced outside technical work.
+        A simple personal section to make the portfolio feel complete and human.
       </p>
 
       <div class="hobby-grid">
         <div class="hobby-card card reveal">
           <div class="hobby-icon"><i class="fas fa-robot"></i></div>
           <h3>Building Things</h3>
-          <p>I enjoy turning ideas into physical prototypes, especially robotics, mechanical assemblies, and hardware-focused concepts.</p>
+          <p>I enjoy turning concepts into physical engineering systems, especially robotics, mechanisms, and hardware-focused prototypes.</p>
         </div>
 
         <div class="hobby-card card reveal">
           <div class="hobby-icon"><i class="fas fa-gears"></i></div>
           <h3>Hands-on Engineering</h3>
-          <p>I like assembly, debugging, testing, and improving systems step by step until the design becomes reliable and practical.</p>
+          <p>I like assembly, debugging, testing, and improving systems until they become practical, reliable, and cleanly working.</p>
         </div>
 
         <div class="hobby-card card reveal">
           <div class="hobby-icon"><i class="fas fa-book-open"></i></div>
           <h3>Continuous Learning</h3>
-          <p>I enjoy learning new tools, improving my technical knowledge, and growing in robotics, automation, and embedded systems.</p>
+          <p>I enjoy learning new tools, improving technical skills, and growing in robotics, automation, embedded systems, and design.</p>
         </div>
       </div>
     </div>
@@ -1530,13 +1571,13 @@
       <div class="section-tag">Reach Out</div>
       <h2 class="section-title">Contact</h2>
       <p class="section-sub">
-        Open to engineering opportunities across Germany. Replace the placeholder links below with your final live contact details.
+        Professional contact section with direct details and a simple message form.
       </p>
 
       <div class="contact-grid">
         <div class="contact-card card reveal">
           <p>
-            I am available immediately and willing to relocate for the right role. If you have an opening in robotics, automation, mechatronics, robot applications, or mechanical system design, I would be glad to connect.
+            I am available immediately and willing to relocate for the right role. If you have an opportunity in robotics, automation, embedded systems, mechatronic design, or technical prototyping, I would be glad to connect.
           </p>
 
           <div class="contact-list">
